@@ -3,6 +3,8 @@ const app = express()
 const port = process.env.PORT || 8080
 const handlebars = require('express-handlebars')
 const path = require('path')
+const UserRouter = require('./routers/UserRouter');
+const CollectionRouter = require('./routers/CollectionRouter');
 
 app.engine('hbs', handlebars.engine({
     extname: 'hbs'
@@ -13,6 +15,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
     res.render('home')
+})
+
+app.use('/users', UserRouter);
+app.use('/collections', CollectionRouter);
+app.get('/about', (req, res, next) => {
+    return res.render('about');
 })
 
 app.listen(port, () => console.log('Server started'))
