@@ -52,6 +52,29 @@ html {
 }
 
 
+/* Product cart - start */
+#thead-cart {
+  background-color: var(--xanh);
+  color: #fff;
+}
+
+#cart-container table tbody img {
+  width: 200px;
+  object-fit: cover;
+}
+
+#cart-container table tbody i {
+  color: #fff;
+}
+
+#cart-container table tbody i:hover {
+  color: red;
+}
+
+
+
+/* Product cart - end */
+
 .large-size {
   font-size: 40px !important;
 }

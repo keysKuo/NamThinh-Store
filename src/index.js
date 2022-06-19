@@ -21,6 +21,10 @@ app.get('/register', (req, res) => {
     res.render('register')
 })
 
+app.get('/cart', (req, res) => {
+    res.render('product-cart')
+})
+
 app.use('/users', UserRouter);
 app.use('/collections', CollectionRouter);
 app.get('/about', (req, res, next) => {
