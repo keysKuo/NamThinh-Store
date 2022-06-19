@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+app.get('/register', (req, res) => {
+    res.render('register')
+})
+
 app.use('/users', UserRouter);
 app.use('/collections', CollectionRouter);
 app.get('/about', (req, res, next) => {

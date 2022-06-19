@@ -1,18 +1,19 @@
 <header class="main-bar" style="background: #fff;">
-	<div class="header">
-		<div class="container">
-			<div class="row row-ibl mid col-mar-0">
-				<div class="col-md-3 col-xs-12 sm-center">
-					<a id="logo" href="/" title="">
-						<img src="/img/logo.png" alt="" title=""/>
-					</a>
-				</div>
-				<div class="col-md-9 col-xs-12 text-right sm-center">
-					<div class="nav-top">
-						<ul>
+    <div class="header">
+        <div class="container">
+            <div class="row row-ibl mid col-mar-0">
+                <div class="col-md-3 col-xs-12 sm-center">
+                    <a id="logo" href="/" title="">
+                        <img src="/img/logo.png" alt="" title="" />
+                    </a>
+                </div>
+                <div class="col-md-9 col-xs-12 text-right sm-center">
+                    <div class="nav-top">
+                        <ul>
                             <li><a href="/pages/gioi-thieu">Giới thiệu</a></li>
                             <li><a href="/blogs/tin-tuc">Tin tức</a></li>
-                            <li><a style="color: #db701e;" class="smooth active" href="/register">Đăng Ký Showroom trên NamThinh.vn</a></li>
+                            <li><a style="color: #db701e;" class="smooth active" href="/register">Đăng Ký Showroom trên
+                                    NamThinh.vn</a></li>
                             <li><a class="smooth" href="#" title="">Chăm sóc khách hàng</a></li>
                             <li><a class="smooth" href="/users/login" title="">Đăng nhập</a></li>
                         </ul>
@@ -20,9 +21,27 @@
 
                     <div class="nav-bottom">
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2 w-50 ml-auto" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <div class="rounded border border-dark">
+                                <input class="form-control search mw-50 ml-auto" type="search"
+                                    placeholder="Tìm kiếm xe, phụ tùng,.." aria-label="Search">
+                                <select class="form-control search" name="calc_shipping_provinces_header" required="">
+                                    <option value="">Tỉnh/Thành</option>
+                                </select>
+                                <select class="form-control search" name="calc_shipping_district_header" required="">
+                                    <option value="">Quận/Huyện</option>
+                                </select>
+                                <input class="billing_address_1_header" name="" type="hidden" value="">
+                                <input class="billing_address_2_header" name="" type="hidden" value="">
+                                <button  id="btn-search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                            </div>
+                            <a id="btn-cart" class="btn btn-outline-success my-2 ml-2" type="submit">
+                                <i class="fas fa-shopping-cart"></i>
+                                Giỏ hàng
+                                <span class="badge badge-pill badge-primary">00</span>
+                            </a>
                         </form>
+
+
                     </div>
                 </div>
             </div>

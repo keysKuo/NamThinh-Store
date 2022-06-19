@@ -10,6 +10,48 @@ html {
 }
 
 
+/* Header */
+
+.search {
+  border-radius: unset;
+  margin: -2px;
+}
+
+.rounded>.mw-50 {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+
+/* btn search */
+#btn-search {
+  border-radius: unset;
+  margin-left: -2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: var(--cam);
+  color: #fff;
+  border-color: var(--cam);
+}
+
+#btn-search:hover {
+  background-color: var(--xanh);
+  border-color: var(--xanh);
+}
+
+/* btn cart */
+#btn-cart {
+  background-color: var(--cam);
+  border-color: var(--cam);
+  color: #fff;
+}
+
+#btn-cart:hover {
+  background-color: var(--xanh);
+  border-color: var(--xanh);
+}
+
+
 .large-size {
   font-size: 40px !important;
 }
@@ -35,8 +77,8 @@ html {
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
-  background-color: black; 
-  
+  background-color: black;
+
 }
 
 .dropdown-menu {
@@ -48,26 +90,32 @@ html {
 
 
 .grow {
-  transition: .2s ease-in-out; }
-  .grow:hover {
-    transform: scale(1.1); }
+  transition: .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
 
 .container {
   max-width: 1200px !important;
- }
+}
 
 .bg-dark {
-  background-color: var(--xanh) !important; }
+  background-color: var(--xanh) !important;
+}
 
 .navbar-brand {
   font-weight: bold;
   font-family: monospace;
-  font-size: 28px; }
+  font-size: 28px;
+}
 
 .navbar-dark .navbar-nav .nav-link {
   font-weight: 700;
   font-size: 14px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 #logo img {
   width: 75%;
@@ -83,7 +131,7 @@ html {
 .main-bar {
   height: 100px;
   width: 100%;
-  
+
 }
 
 .nav-top ul {
@@ -104,8 +152,8 @@ html {
   height: 50px;
 } */
 
-.semi-nav ul li a{
-  color:  white;
+.semi-nav ul li a {
+  color: white;
   font-weight: 500;
 }
 
@@ -124,13 +172,14 @@ html {
 
 /* login page */
 
-#wrapper{
+#wrapper {
   min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#form-login{
+
+#form-login {
   max-width: 600px;
   background: white;
   flex-grow: 1;
@@ -138,26 +187,30 @@ html {
   box-shadow: 0px 0px 4px 2px var(--cam);
   border-radius: 0.5rem;
 }
-.form-heading{
+
+.form-heading {
   font-size: 25px;
   color: black;
   text-align: center;
   margin-bottom: 30px;
 }
-.form-group{
+
+.form-group {
   border-bottom: 1px solid var(--xanh);
   margin-top: 15px;
   margin-bottom: 20px;
   display: flex;
   padding: 10px 0;
 }
-.form-group i{
+
+.form-group i {
   color: black;
   font-size: 14px;
   padding-top: 5px;
   padding-right: 10px;
 }
-.form-input{
+
+.form-input {
   background: transparent;
   border: 0;
   outline: 0;
@@ -165,14 +218,17 @@ html {
   flex-grow: 1;
   font-size: 16px;
 }
-.form-input::placeholder{
+
+.form-input::placeholder {
   color: black;
 }
-#eye i{
+
+#eye i {
   padding-right: 0;
   cursor: pointer;
 }
-.form-submit{
+
+.form-submit {
   background: transparent;
   border: 1px solid var(--xanh);
   color: var(--xanh);
@@ -182,7 +238,8 @@ html {
   transition: 0.25s ease-in-out;
   margin-top: 30px;
 }
-.form-submit:hover{
+
+.form-submit:hover {
   border: 1px solid #54a0ff;
 }
 
@@ -219,26 +276,26 @@ html {
   margin-right: -15px;
 }
 
-.h-title > span > a {
+.h-title>span>a {
   color: black;
   font-size: 30px;
   text-decoration: none;
 }
 
 .h-module .filter ul li a {
-    color: #fff;
-    font-size: 15px;
-    text-align: center;
-    line-height: 40px;
-    background: #cb0309;
-    display: block;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  background: #cb0309;
+  display: block;
 }
 
 .smooth {
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .link-more-1 {
@@ -262,13 +319,13 @@ html {
   padding: 25px;
 }
 
-.title > a {
+.title>a {
   color: black;
   font-size: 16px;
   text-decoration: none;
 }
 
-.title > a:hover {
+.title>a:hover {
   color: var(--cam);
 }
 
@@ -283,14 +340,14 @@ html {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
-  
+
   /* border: 1px solid black; */
 }
 
 .address {
   color: rgb(110, 107, 107);
   font-size: 13px;
-  
+
   /* border: 1px solid black; */
 }
 
@@ -298,7 +355,7 @@ html {
   border: 2px solid var(--cam);
   background-color: var(--cam);
   padding: 5px;
-  
+
 }
 
 .phone:hover {
@@ -308,7 +365,8 @@ html {
   cursor: pointer;
 }
 
-.phone > a, .phone > i {
+.phone>a,
+.phone>i {
   color: whitesmoke;
   text-decoration: none;
   font-weight: 500;
@@ -319,9 +377,9 @@ html {
 
 .des {
   line-height: 22px;
-    color: #999999;
-    font-weight: 600;
-    margin-bottom: 10px;
+  color: #999999;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .ctrl-box {
