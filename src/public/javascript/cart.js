@@ -61,5 +61,5 @@ function updateCartTotal() {
         total += (price * quantity)
     }
     total = total.toLocaleString('vi', { style: 'currency', currency: 'VND' });
-    document.getElementById('total-cart').innerText = 'TỔNG TIỀN THANH TOÁN: ' + total
+    document.querySelector('#total-cart strong').innerText = 'TỔNG TIỀN THANH TOÁN: ' + total
 }

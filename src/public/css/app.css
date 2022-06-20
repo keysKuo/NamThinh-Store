@@ -71,6 +71,11 @@ html {
   color: red;
 }
 
+#total-cart {
+  text-align: center;
+  font-size: 20px;
+}
+
 
 
 /* Product cart - end */
@@ -225,6 +230,8 @@ html {
   display: flex;
   padding: 10px 0;
 }
+
+
 
 .form-group i {
   color: black;
