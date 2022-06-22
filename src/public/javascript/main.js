@@ -1,3 +1,41 @@
+$(document).ready(function () {
+
+    $('#eye').click(function () {
+        $(this).toggleClass('open');
+        $(this).children('i').toggleClass('fa-eye-slash fa-eye');
+        if ($(this).hasClass('open')) {
+            $(this).prev().attr('type', 'text');
+        } else {
+            $(this).prev().attr('type', 'password');
+        }
+    });
+
+    $('#eye2').click(function () {
+        $(this).toggleClass('open');
+        $(this).children('i').toggleClass('fa-eye-slash fa-eye');
+        if ($(this).hasClass('open')) {
+            $(this).prev().attr('type', 'text');
+        } else {
+            $(this).prev().attr('type', 'password');
+        }
+    });
+
+    // Image Modal
+    $(function () {
+        $('.product1 img').click((event) => {
+            var targetID = $(event.target).data("id");
+            $('.carousel-item').each((index, element) => {
+                if (index + 1 == targetID)
+                    $(element).addClass('active')
+                else {
+                    $(element).removeClass('active')
+                }
+            })
+        })
+    })
+
+});
+
 // City Select
 
 function selectDistrict(calc_shipping_provinces, calc_shipping_district, billing_address_1, billing_address_2, district_local, address_1_saved, address_2_saved) {
@@ -95,28 +133,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-$(document).ready(function () {
 
-    $('#eye').click(function () {
-        $(this).toggleClass('open');
-        $(this).children('i').toggleClass('fa-eye-slash fa-eye');
-        if ($(this).hasClass('open')) {
-            $(this).prev().attr('type', 'text');
-        } else {
-            $(this).prev().attr('type', 'password');
-        }
-    });
-
-    $('#eye2').click(function () {
-        $(this).toggleClass('open');
-        $(this).children('i').toggleClass('fa-eye-slash fa-eye');
-        if ($(this).hasClass('open')) {
-            $(this).prev().attr('type', 'text');
-        } else {
-            $(this).prev().attr('type', 'password');
-        }
-    });
-});
 
 
 
