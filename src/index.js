@@ -25,6 +25,9 @@ app.get('/cart', (req, res) => {
     res.render('product-cart')
 })
 
+app.get('/contact', (req, res) => {
+    res.render('contact')
+})
 app.use('/users', UserRouter);
 app.use('/collections', CollectionRouter);
 app.get('/about', (req, res, next) => {

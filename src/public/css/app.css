@@ -441,3 +441,52 @@ html {
   -ms-user-select: none;
   user-select: none;
 }
+
+
+/*  */
+.product2 {
+  padding: 2%;
+  position: relative;
+  text-align: center;
+  width: 5%;
+}
+
+.product2 img {
+  margin: 0 10px;
+}
+
+.slider-nav {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.product1 img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #999999 !important
+}
+
+/* Comment-heading */
+.heading {
+  border-left: 4px solid var(--cam);
+  padding: 10px;
+}
+
+.heading::after {
+  content: "";
+  background: black;
+  position: absolute;
+  bottom: 14px;
+  left: 34px;
+  height: 2px;
+  width: 10%;
+}
